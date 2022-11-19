@@ -1,0 +1,29 @@
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "Sabino Doe",
+  "email": "sabino.doe@mail.com",
+  "admin": true
+}
+
+###
+
+GET http://localhost:3000/users
+
+###
+
+GET http://localhost:3000/users/3
+
+###
+
+PATCH http://localhost:3000/users/3
+Content-Type: application/json
+
+{
+  "name": "Antonio Sabino"
+}
+
+###
+
+DELETE http://localhost:3000/users/1
