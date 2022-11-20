@@ -27,3 +27,14 @@ Content-Type: application/json
 ###
 
 DELETE http://localhost:3000/users/1
+
+###
+
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+  "title": "My first post",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nunc nisl aliquet nisl, eget aliquam nisl nisl eu nunc.",
+  "authorEmail": "sabino.doe@mail.com"
+}
