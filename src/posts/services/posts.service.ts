@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
-import { CreatePostDto } from './dto/create-post.dto';
-import { UpdatePostDto } from './dto/update-post.dto';
-import { PostsRepository } from './repositories/posts.repository';
+import { CreatePostDto } from '../dto/create-post.dto';
+import { UpdatePostDto } from '../dto/update-post.dto';
+import { PostsRepository } from '../repositories/posts.repository';
 
 @Injectable()
 export class PostsService {
