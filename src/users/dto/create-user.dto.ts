@@ -7,6 +7,11 @@ export class CreateUserDto {
   @IsNotEmpty()
   email: string;
 
+  @ApiProperty({ description: 'The password of the user' })
+  @IsString()
+  @IsNotEmpty()
+  password: string;
+
   @ApiProperty({ description: 'The name of the user' })
   @IsString()
   @IsNotEmpty()
