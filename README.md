@@ -26,13 +26,29 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-## Installation
+<h2>🐳 Running on Docker vs Locally</h2>
+  
+### Running on Docker
+ 
+> Run the `node` and `db` services with the `docker-compose up -d` or `docker-compose up` command.`.
+```bash
+$ docker-compose up
+```
+
+> Use the command `docker exec -it app bash`
+  - It will give you access to the interactive terminal of the container created by compose, which is running in the background.
+
+---
+  
+### Locally
+  
+> Install dependencies with `npm install`
 
 ```bash
 $ npm install
 ```
 
-## Running the app
+> Running the app
 
 ```bash
 # development
