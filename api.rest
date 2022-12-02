@@ -1,36 +1,43 @@
+// swagger
 GET http://localhost:3000/api
 
 ###
-
+// create a new user
 POST http://localhost:3000/users
 Content-Type: application/json
 
 {
   "name": "Sabino Doe",
-  "email": "sabino.doe@mail.com",
+  "email": "teste@mail.com",
+  "password": "teste",
   "admin": true
 }
 
 ###
-
+// get a token
 POST http://localhost:3000/auth/login
 Content-Type: application/json
 
 {
-  "email": "sabino.doe@mail.com",
-  "password": "senha123"
+  "email": "teste@mail.com",
+  "password": "teste"
 }
 
 ###
+// get a profile
+GET http://localhost:3000/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNhYmlubyBEb2UiLCJlbWFpbCI6InRlc3RlQG1haWwuY29tIiwiaWF0IjoxNjY5OTkwMTU2LCJleHAiOjE2NzAwNzY1NTZ9.6Too4xfR6UvqudizxYRinWQjKqE8SaYjPdh6C0ZeJ9k
 
+###
+// get all users
 GET http://localhost:3000/users
 
 ###
-
+// get a user
 GET http://localhost:3000/users/3
 
 ###
-
+// update a user
 PATCH http://localhost:3000/users/3
 Content-Type: application/json
 
@@ -39,24 +46,6 @@ Content-Type: application/json
 }
 
 ###
-
+// delete a user
 DELETE http://localhost:3000/users/1
 
-###
-
-POST http://localhost:3000/posts
-Content-Type: application/json
-
-{
-  "title": "My first post",
-  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nunc nisl aliquet nisl, eget aliquam nisl nisl eu nunc.",
-  "authorEmail": "sabino.doe@mail.com"
-}
-
-###
-
-GET http://localhost:3000/posts
-
-###
-
-GET http://localhost:3000/posts/1
