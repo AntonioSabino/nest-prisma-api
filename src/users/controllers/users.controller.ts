@@ -6,6 +6,7 @@ import {
   Patch,
   Param,
   Delete,
+  UseGuards,
 } from '@nestjs/common';
 import { UsersService } from '../services/users.service';
 import { CreateUserDto } from '../dto/create-user.dto';
@@ -27,6 +28,8 @@ export class UsersController {
   @ApiForbiddenResponse({ description: 'Access denied.' })
   @Get()
   findAll() {
+    console.log('UsersController.findAll()');
+
     return this.usersService.findAll();
   }
 

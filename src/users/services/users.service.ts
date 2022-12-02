@@ -24,6 +24,14 @@ export class UsersService {
     return user;
   }
 
+  async findOneByEmail(email: string) {
+    const user = await this.repository.findOneByEmail(email);
+    if (!user) {
+      throw new NotFoundError('User not found');
+    }
+    return user;
+  }
+
   update(id: number, updateUserDto: UpdateUserDto) {
     return this.repository.update(id, updateUserDto);
   }
