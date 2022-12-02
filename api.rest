@@ -7,9 +7,9 @@ POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-  "name": "Sabino Doe",
-  "email": "teste@mail.com",
-  "password": "teste",
+  "name": "Teste3",
+  "email": "teste3@mail.com",
+  "password": "teste3",
   "admin": true
 }
 
@@ -19,14 +19,14 @@ POST http://localhost:3000/auth/login
 Content-Type: application/json
 
 {
-  "email": "teste@mail.com",
-  "password": "teste"
+  "email": "teste3@mail.com",
+  "password": "teste3"
 }
 
 ###
 // get a profile
 GET http://localhost:3000/profile
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNhYmlubyBEb2UiLCJlbWFpbCI6InRlc3RlQG1haWwuY29tIiwiaWF0IjoxNjY5OTkwMTU2LCJleHAiOjE2NzAwNzY1NTZ9.6Too4xfR6UvqudizxYRinWQjKqE8SaYjPdh6C0ZeJ9k
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlRlc3RlMyIsImVtYWlsIjoidGVzdGUzQG1haWwuY29tIiwiaWF0IjoxNjY5OTkxMzk2LCJleHAiOjE2NzAwNzc3OTZ9._hoGcJS8K9RV2WfrPrMBfDNz6lGd8pVFIAcQgC5KnNE
 
 ###
 // get all users
